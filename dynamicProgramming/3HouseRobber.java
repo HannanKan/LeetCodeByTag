@@ -13,7 +13,7 @@ of money you can rob tonight without alerting the police.
 each time update the two arrays.*/
 class Solution{
     public int rob(int[] nums) {
-		if(nums==null) return 0;
+		if(nums==null||nums.length==0) return 0;
 		if(nums.length==1) return nums[0];
 		int[] contain=new int[nums.length];
 		int[] noContain=new int[nums.length];
